@@ -24,7 +24,7 @@ body{
 }
 
 .risultato{
-    grid-column: 1/ span 4;
+    grid-column: span 4;
     grid-row: 1;
     height: 100%;
     width: 100%;
