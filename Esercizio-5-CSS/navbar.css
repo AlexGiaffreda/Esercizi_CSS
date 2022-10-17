@@ -59,3 +59,29 @@ a{
     color:green;
     border: 1px solid green;
 }
+
+.search:hover{
+    background-color: green;
+    color: white;
+}
+
+.hamburger{
+    display: none;
+}
+
+@media (max-width: 768px){
+    .search, .barra, .links{
+        display: none;
+    }
+
+    .title {order: 1;}
+    
+    .hamburger{
+        order: 0;
+        display: block;
+        
+    }
+    .hamburger-menu{
+        filter: invert(38%) sepia(7%) saturate(293%) hue-rotate(152deg) brightness(88%) contrast(92%);
+    }
+}
