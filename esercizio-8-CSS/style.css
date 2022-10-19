@@ -6,88 +6,107 @@
 
 body{
     display: flex;
-    justify-content: center;
     align-items: center;
-    margin-top: 1.3rem;
-    
+    justify-content: center;
+    gap: 2rem;
 }
 
 .card{
-    background-color: gray;
-    border-radius: 1.6rem;
-}
-
-img{
-    width: 100.5%;
-}
-
-.menu-pallini{
-    grid-column: auto;
-    text-align: end;
-    padding: 0 0.4rem 1.2rem;
-    font-size: 2rem;
-    
-}
-
-.icona-profilo{
-    width: 3rem;
-    height: 3rem;
-    border-radius: 50%;
-    background-color: white;
-    margin: 0 .5rem .3rem .7rem;
-    float:left;
-padding-left: 10px;
-    
-}
-
-.icone{
     display: flex;
-    gap: 0.5rem;
-    align-items: center;
-    padding: 0.2rem 0 0.2rem 0.5rem;
-    font-size: 1.4rem;
+    flex-direction: column;
+    height: 32rem;
+    width: 20rem;
+    border-radius: 1rem;
+    background: linear-gradient(140deg, rgb(163, 163, 163), 
+    rgb(187, 187, 187), rgb(229, 229, 229), 
+    rgb(240, 239, 239));
+    box-shadow: 0 .3rem .3rem rgba(0, 0, 0, 0.278);
+    padding-bottom: 2rem;
 }
 
-.icone>p:first-child{
+.sezione1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     padding: 0.5rem;
 }
 
-article{
-    padding: 0.3rem 0.4rem 3rem 0.6rem;
+.utente{
+    display: flex;
+    justify-content: flex-start
 }
 
-.grid{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    padding-top: 0.3rem
+picture{
+    background-color: white;
+    border-radius: 3rem;
+    width: 3rem;
+    height: 3rem;
 }
 
-.nome-gatto-e-data { 
-
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 0.5rem;
 }
 
+.data{
+    color: white;
+}
 
+.uil-ellipsis-h::before{
+    font-size: 2rem;
+}
 
+.gatto-mario-rossi{
+    background-image: url("./assets/mario-rossi.png");
+    background-size: 20rem;
+    height: 58%;
+    width: 100%;
+    background-repeat: no-repeat;
+}
 
+.interazioni{
+    padding-left: 1rem;
+    display: flex;
+    gap: 0.5rem;
+}
 
+.uil-heart, .uil-comment{
+    font-size: 1.3rem;
+}
 
+.descrizione{
+    padding: 0.5rem;
+    
+}
 
+.gatto-elis-miao{
+    background-image: url("./assets/elis-miao.png");
+    background-size: 20rem;
+    height: 58%;
+    width: 100%;
+    background-repeat: no-repeat;
+}
 
-@media (max-width: 987px) {
-    .responsive {
+.gatto-gattino-micino{
+    background-image: url("./assets/gattino-micino.png");
+    background-size: 20rem;
+    height: 58%;
+    width: 100%;
+    background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 768px) {
+    body {
         display: grid;
         grid-template-columns: repeat(2,1fr);
-        padding: 10vh 5vw;
-    }
-    .responsive {
-        justify-self: center;
-        align-self: center;
-    }
 }
-@media (max-width: 650px) {
-    .responsive {
+}
+
+@media screen and (max-width: 375px) {
+    body {
         display: flex;
-        flex-direction: column;
-        padding: 12vh 0 12vh;
+        flex-direction: column
     }
 }
