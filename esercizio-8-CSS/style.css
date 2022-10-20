@@ -9,12 +9,13 @@ body{
     align-items: center;
     justify-content: center;
     gap: 2rem;
+    min-height: 100vh;
 }
 
 .card{
     display: flex;
     flex-direction: column;
-    height: 32rem;
+    height: 30rem;
     width: 20rem;
     border-radius: 1rem;
     background: linear-gradient(140deg, rgb(163, 163, 163), 
@@ -22,6 +23,7 @@ body{
     rgb(240, 239, 239));
     box-shadow: 0 .3rem .3rem rgba(0, 0, 0, 0.278);
     padding-bottom: 2rem;
+    margin-left: 1rem;
 }
 
 .sezione1{
@@ -97,14 +99,18 @@ picture{
     background-repeat: no-repeat;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1070px) {
     body {
         display: grid;
         grid-template-columns: repeat(2,1fr);
+        
+} 
+.card{
+    margin: 0 auto;
 }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 720px) {
     body {
         display: flex;
         flex-direction: column
